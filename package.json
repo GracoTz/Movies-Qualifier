@@ -1,7 +1,7 @@
 {
   "name": "Qualification of Movies",
   "version": "1.0.0",
-  "description": "This is a simple web using AJAX and NodeJS with Express Framework",
+  "description": "App to rating movies do it in NodeJS Express and MySQL Database",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
