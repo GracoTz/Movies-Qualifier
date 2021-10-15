@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating of Movies</title>
+    <link rel="stylesheet" href="./css/w3.css">
+</head>
+<body>
+    <div id="msgContainer" style="display: none; text-align: center;">
+        <p id="message"></p>
+    </div>
+    <div style="width: 80%; margin: auto; text-align: center; padding-bottom: 10px;" class="w3-card-4">
+        <h1 class="w3-blue">Register the Movie</h1>
+        <form name="regist" action="/new" method="POST" class="w3-container">
+
+            <div style="width: 80%; max-width: 500px; margin: auto;">
+                <label for="name">Name of the Movie</label>
+                <input class="w3-input w3-border" type="text" name="name" id="name">
+                
+                <label for="rating">Rating</label>
+                <input class="w3-input w3-border" type="range" min="0" max="10" name="rating" id="rating">
+            </div>
+    
+            <input class="w3-btn w3-blue w3-margin" type="submit" value="Add the new Movie" id="btn-send">
+    
+        </form>
+        <div style="width: 80%; margin: 15px auto;">
+            <table class="w3-table-all">
+                <thead>
+                    <th class="w3-blue">Films Name</th>
+                    <th class="w3-blue">Rating</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
